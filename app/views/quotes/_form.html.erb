@@ -15,11 +15,12 @@
     <%= form.label :premium %>
     <%= form.text_field :premium %>
   </div> -->
-
+<br>
   <div class="field">
     <%= form.label "Phone Model" %>
     <%= form.collection_select :ex_model_id, ExModel.all, :id, :model %>
   </div>
+  <br>
 
   <div class="actions">
     <%= form.submit "Submit Quote", :class => 'submitButton' %>

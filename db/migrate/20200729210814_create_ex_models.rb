@@ -3,7 +3,7 @@ class CreateExModels < ActiveRecord::Migration[6.0]
     create_table :ex_models do |t|
       t.string :brand
       t.string :model
-      t.decimal :price
+      t.decimal :price, precision: 10, scale: 2
       t.references :risk_by_brand, null: false, foreign_key: true
 
       t.timestamps
