@@ -1,0 +1,37 @@
+<%= form_with(model: risk_by_brand, local: true) do |form| %>
+  <% if risk_by_brand.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(risk_by_brand.errors.count, "error") %> prohibited this risk_by_brand from being saved:</h2>
+
+      <ul>
+        <% risk_by_brand.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :brand %>
+    <%= form.text_field :brand %>
+  </div>
+
+  <div class="field">
+    <%= form.label :screen_risk %>
+    <%= form.text_field :screen_risk %>
+  </div>
+
+  <div class="field">
+    <%= form.label :total_loss_risk %>
+    <%= form.text_field :total_loss_risk %>
+  </div>
+
+  <div class="field">
+    <%= form.label :battery_risk %>
+    <%= form.text_field :battery_risk %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

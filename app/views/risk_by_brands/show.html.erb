@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Brand:</strong>
+  <%= @risk_by_brand.brand %>
+</p>
+
+<p>
+  <strong>Screen risk:</strong>
+  <%= @risk_by_brand.screen_risk %>
+</p>
+
+<p>
+  <strong>Total loss risk:</strong>
+  <%= @risk_by_brand.total_loss_risk %>
+</p>
+
+<p>
+  <strong>Battery risk:</strong>
+  <%= @risk_by_brand.battery_risk %>
+</p>
+
+<%= link_to 'Edit', edit_risk_by_brand_path(@risk_by_brand) %> |
+<%= link_to 'Back', risk_by_brands_path %>

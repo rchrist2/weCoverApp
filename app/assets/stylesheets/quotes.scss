@@ -1,0 +1,49 @@
+// Place all the styles related to the quotes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+div#headers{
+    align-items: center;
+}
+
+#physicianHeader{
+    font-family: 'Franklin Gothic Book', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+#benefitsHeader{
+    font-family: 'Franklin Gothic Book', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.style_pay_image{
+    margin-right: 100px;
+    float: right;
+}
+
+.style_cart_image{
+    margin-left: 100px;
+}
+
+.actions{
+    text-align: center;
+    margin: auto;
+}
+
+.submitButton {
+	background-color:#405369;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+}
+.submitButton:hover {
+	background-color:#7f90a3;
+}
+.submitButton:active {
+	position:relative;
+	top:1px;
+}

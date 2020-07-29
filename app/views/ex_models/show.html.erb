@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Brand:</strong>
+  <%= @ex_model.brand %>
+</p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @ex_model.model %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @ex_model.price %>
+</p>
+
+<p>
+  <strong>Risk by brand:</strong>
+  <%= @ex_model.risk_by_brand_id %>
+</p>
+
+<%= link_to 'Edit', edit_ex_model_path(@ex_model) %> |
+<%= link_to 'Back', ex_models_path %>

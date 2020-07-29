@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WeCover Phone Insurance</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div id="appHeader">
+      <div class="inline-div">
+        <div class="left">
+        <h2 id="mainHeader"><%= image_tag "house.png", size: "20x20"%>My Phone Warehouse</h1></div>
+
+        <div class="right">
+        <h2 id="accountHeader"><%= image_tag "hamburger.png", size: "20x20", :class => "style_image"%> My Account</h2></div>
+    </div>
+      
+    </div>
+
+    <%= yield %>
+  </body>
+</html>

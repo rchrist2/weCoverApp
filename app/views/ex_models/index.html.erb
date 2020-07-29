@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Ex Models</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Brand</th>
+      <th>Model</th>
+      <th>Price</th>
+      <th>Risk by brand</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ex_models.each do |ex_model| %>
+      <tr>
+        <td><%= ex_model.brand %></td>
+        <td><%= ex_model.model %></td>
+        <td><%= ex_model.price %></td>
+        <td><%= ex_model.risk_by_brand_id %></td>
+        <td><%= link_to 'Show', ex_model %></td>
+        <td><%= link_to 'Edit', edit_ex_model_path(ex_model) %></td>
+        <td><%= link_to 'Destroy', ex_model, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ex Model', new_ex_model_path %>

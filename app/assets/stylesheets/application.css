@@ -1,0 +1,82 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ div#summary {
+    border: 2px solid blue;
+    padding: 10px;
+    background: lightyellow;
+}
+
+.info-box{
+    border: 2px solid blue;
+    padding: 10px;
+    background: #EEEEFF;
+}
+
+body {
+     font-family: helvetica;
+ }
+
+#appHeader {
+    padding: 10px;
+    margin-right: 16px;
+    background-color: lightgray;
+    border: 2px solid #4B5565;
+    background: rgb(64,83,105);
+    background: linear-gradient(0deg, rgba(64,83,105,1) 0%, rgba(255,255,255,1) 100%);
+ }
+
+ .inline-div {
+    display: block;
+  }
+
+.style_image{
+    
+}
+
+.left
+{
+    display: inline-block;
+}
+
+.right{
+    float: right;
+    display: inline-block;
+}
+
+.field{
+    text-align: center;
+}
+
+.homeButton{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.homeQuoteButton {
+	background-color:#405369;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+    text-decoration:none;
+    text-align: center;
+    top: 100px;
+}
+.homeQuoteButton:hover {
+	background-color:#7f90a3;
+}

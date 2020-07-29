@@ -1,0 +1,37 @@
+<%= form_with(model: ex_model, local: true) do |form| %>
+  <% if ex_model.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(ex_model.errors.count, "error") %> prohibited this ex_model from being saved:</h2>
+
+      <ul>
+        <% ex_model.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :brand %>
+    <%= form.text_field :brand %>
+  </div>
+
+  <div class="field">
+    <%= form.label :model %>
+    <%= form.text_field :model %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.text_field :price %>
+  </div>
+
+  <div class="field">
+    <%= form.label :risk_by_brand_id %>
+    <%= form.text_field :risk_by_brand_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
