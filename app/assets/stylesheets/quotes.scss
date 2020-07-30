@@ -33,7 +33,20 @@ div#headers{
 
 .actions{
     text-align: center;
-    margin: auto;
+	margin: auto;
+	display: inline-block;
+}
+
+.custom {
+	text-align: center;
+	margin: auto;
+	display: inline-block;
+}
+
+.buttons {
+	text-align: center;
+	margin: auto;
+	display: block;
 }
 
 .submitButton {
@@ -43,13 +56,32 @@ div#headers{
 	color:#ffffff;
 	font-family:Arial;
 	font-size:17px;
-	padding:16px 31px;
+	padding:10px 21px;
 	text-decoration:none;
 }
 .submitButton:hover {
 	background-color:#7f90a3;
 }
 .submitButton:active {
+	position:relative;
+	top:1px;
+}
+
+.customButton {
+	background-color:#405369;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:10px 21px;
+	margin-left: 10px;
+	text-decoration:none;
+}
+.customButton:hover {
+	background-color:#7f90a3;
+}
+.customButton:active {
 	position:relative;
 	top:1px;
 }

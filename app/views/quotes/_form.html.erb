@@ -22,9 +22,15 @@
   </div>
   <br>
 
+<div class="buttons">
   <div class="actions">
     <%= form.submit "Submit", :class => 'submitButton' %>
   </div>
+
+  <div class="custom">
+    <%= button_tag "Custom Coverage", :type => 'button', :class => "customButton", :onclick => "redirectCustom()" %>
+  </div>
+</div>
 
   <div class="refuseLink">
   <p onclick="redirectPay()" style="font-size : 11px">No, I don't need coverage</p>
@@ -38,6 +44,10 @@
 
   function redirectHelp() {
     window.confirm("You will be redirected to a sales representative for assistance.");
+  }
+
+  function redirectCustom() {
+    window.confirm("You will be redirected to custom coverage...");
   }
   </script>
 <% end %>

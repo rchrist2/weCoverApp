@@ -49,6 +49,17 @@ so you (and your phone) can be back to normal as soon as possible. Coverage incl
   text-align: center;
 }
 
+.collapsible:after {
+  content: "＋"; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: white;
+  float: right;
+}
+
+.active:after {
+  content: "−"; /* Unicode character for "minus" sign (-) */
+}
+
 </style>
 </head>
 <body>
