@@ -11,7 +11,7 @@ default: &default
   database: insurancedb
   host: localhost
   username: root
-  password: root
+  password: 1234
   encoding: utf8
 
 development:

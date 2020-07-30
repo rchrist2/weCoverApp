@@ -62,7 +62,7 @@ body {
 
 .homeButton{
     text-align: center;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .homeQuoteButton {
@@ -80,3 +80,34 @@ body {
 .homeQuoteButton:hover {
 	background-color:#7f90a3;
 }
+
+.homeHeader{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.myAccountHeader {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.leftLink, .rightLink{
+    text-decoration: none;
+   }
+
+
+.leftLink:link, .rightLink:link{
+    color:black;
+  }
+  .leftLink:visited, .rightLink:visited{
+    color:black;
+  }
+  .leftLink:hover, .rightLink:hover{
+    color:black;
+  }
+  .leftLink:focus, .rightLink:focus{
+    color:black;
+  }
+  .leftLink:active, .rightLink:active{
+    color:black;
+  }

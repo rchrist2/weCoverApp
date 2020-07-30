@@ -1,18 +1,17 @@
 
+<div class="results">
+  <p class="resultShow">
+    <h2 class="priceHeader">Your Price:</h2>
+    $<%= sql = "select ((0.33 * e.price * r.screen_risk) + 
+          (0.2 * e.price * r.battery_risk) + (1 * e.price * r.total_loss_risk)) AS premium 
+          from ex_models e join risk_by_brands r 
+          on e.risk_by_brand_id=r.id 
+          join quotes q ON q.ex_model_id=e.id 
+          order by q.created_at desc limit 1;"
+  results = ActiveRecord::Base.connection.exec_query(sql).cast_values
+  JSON.pretty_generate(results) %>
+  </p>
 
-<p>
-  <strong>Premium:</strong>
-  <%= sql = "select ((0.33 * e.price * r.screen_risk) + 
-        (0.2 * e.price * r.battery_risk) + (1 * e.price * r.total_loss_risk)) AS premium 
-        from ex_models e join risk_by_brands r 
-        on e.risk_by_brand_id=r.id 
-        join quotes q ON q.ex_model_id=e.id 
-        order by q.created_at desc limit 1;"
-results = ActiveRecord::Base.connection.exec_query(sql)
-results = results.to_hash
-JSON.pretty_generate(results);
-%>
-</p>
 
 <!-- <p>
   <strong>Phone Model:</strong>
@@ -21,4 +20,5 @@ JSON.pretty_generate(results);
 
 <%#= link_to 'Edit', edit_quote_path(@quote) %> 
 <%#= link_to 'Back', quotes_path %>
-<%= link_to 'New Quote', :back %>
+<%= link_to 'New Quote', :back, :class => 'backLink' %>
+</div>

@@ -47,3 +47,22 @@ div#headers{
 	position:relative;
 	top:1px;
 }
+
+.results{
+	width:100%;
+  height:100%;  
+  display: table;
+  text-align: center;
+}
+
+.resultShow {
+	text-align:center; 
+		vertical-align: middle;
+		display: table-cell;  
+		margin: 0 auto;
+}
+
+.backLink {
+	text-align: center;
+    margin: auto;
+}

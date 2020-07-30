@@ -13,10 +13,12 @@
     <div id="appHeader">
       <div class="inline-div">
         <div class="left">
-        <h2 id="mainHeader"><%= image_tag "house.png", size: "20x20"%>My Phone Warehouse</h1></div>
+        <a class="leftLink" href="<%= home_pages_path %>"><h2 id="mainHeader"><%= image_tag "house.png", size: "20x20"%>My Phone Warehouse</h1></div>
+        </a>
 
         <div class="right">
-        <h2 id="accountHeader"><%= image_tag "hamburger.png", size: "20x20", :class => "style_image"%> My Account</h2></div>
+        <a class="rightLink" href="<%= account_path %>"><h2 id="accountHeader"><%= image_tag "hamburger.png", size: "20x20", :class => "style_image"%> My Account</h2></div>
+        </a>
     </div>
       
     </div>
