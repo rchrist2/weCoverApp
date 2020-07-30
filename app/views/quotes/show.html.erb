@@ -9,7 +9,8 @@
           join quotes q ON q.ex_model_id=e.id 
           order by q.created_at desc limit 1;"
   results = ActiveRecord::Base.connection.exec_query(sql).cast_values
-  JSON.pretty_generate(results) %>
+  results = results.to_a
+  results.join(', ') %>
   </p>
 
 

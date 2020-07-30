@@ -18,11 +18,13 @@ div#headers{
 
 .style_pay_image{
     margin-right: 100px;
-    float: right;
+	float: right;
+	cursor: pointer;
 }
 
 .style_cart_image{
-    margin-left: 100px;
+	margin-left: 100px;
+	cursor: pointer;
 }
 
 .actions{
@@ -65,4 +67,18 @@ div#headers{
 .backLink {
 	text-align: center;
     margin: auto;
+}
+
+.refuseLink{
+	text-align: center;
+	margin: auto;
+	cursor: pointer;
+	text-decoration: underline;
+	margin-top: 20px;
+}
+
+.subtitleCoverage {
+	text-align: center;
+	margin: auto;
+	width: 50%;
 }
