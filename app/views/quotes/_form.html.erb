@@ -28,10 +28,16 @@
 
   <div class="refuseLink">
   <p onclick="redirectPay()" style="font-size : 11px">No, I don't need coverage</p>
+   <p onclick="redirectHelp()" style="font-size : 11px">Get Help</p>
   </div>
+  
   <script>
   function redirectPay() {
     window.confirm("No coverage selected. You will be redirected to payment...");
+  }
+
+  function redirectHelp() {
+    window.confirm("You will be redirected to a sales representative for assistance.");
   }
   </script>
 <% end %>

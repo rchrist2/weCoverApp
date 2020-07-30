@@ -1,7 +1,7 @@
 
 <div class="results">
   <p class="resultShow">
-    <h2 class="priceHeader">Your Price:</h2>
+    <h2 class="priceHeader">Your Annual Price:</h2>
     $<%= sql = "select round(((0.33 * e.price * r.screen_risk) + 
           (0.2 * e.price * r.battery_risk) + (1 * e.price * r.total_loss_risk)),2) AS premium 
           from ex_models e join risk_by_brands r 
