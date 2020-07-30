@@ -59,6 +59,7 @@ div#headers{
 	padding:10px 21px;
 	text-decoration:none;
 	border: none;
+	outline:none;
 }
 .submitButton:hover {
 	background-color:#7f90a3;
@@ -79,6 +80,7 @@ div#headers{
 	margin-left: 10px;
 	text-decoration:none;
 	border: none;
+	outline:none;
 }
 .customButton:hover {
 	background-color:#7f90a3;
@@ -87,6 +89,8 @@ div#headers{
 	position:relative;
 	top:1px;
 }
+
+
 
 .results{
 	width:100%;
