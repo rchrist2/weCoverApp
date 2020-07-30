@@ -1,18 +1,8 @@
-<div onClick="goCart()"><%= image_tag "cart.png", size: "80x108", :class => "style_cart_image" %>
+<%= image_tag "cart.png", size: "80x108", :onclick => 'alert("You will be redirected to your cart...")', :class => "style_cart_image" %>
 
 
-<%= image_tag "pay.png", size: "80x108", :class => "style_pay_image" %>
-</div>
+<%= image_tag "pay.png", size: "80x108", :onclick => 'alert("You will be redirected to payment...")', :class => "style_pay_image" %>
 
-<script>
-  function goCart() {
-    window.confirm("You will be redirected to My Phone Warehouse...");
-  }
-
-  function goPay() {
-    window.confirm("You will be redirected to payment...");
-  }
-  </script>
 
 <div class="headers">
 <h1 id="physicianHeader">AIG WeCover</h1>
