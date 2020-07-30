@@ -2,8 +2,8 @@
 <div class="results">
   <p class="resultShow">
     <h2 class="priceHeader">Your Price:</h2>
-    $<%= sql = "select ((0.33 * e.price * r.screen_risk) + 
-          (0.2 * e.price * r.battery_risk) + (1 * e.price * r.total_loss_risk)) AS premium 
+    $<%= sql = "select round(((0.33 * e.price * r.screen_risk) + 
+          (0.2 * e.price * r.battery_risk) + (1 * e.price * r.total_loss_risk)),2) AS premium 
           from ex_models e join risk_by_brands r 
           on e.risk_by_brand_id=r.id 
           join quotes q ON q.ex_model_id=e.id 
