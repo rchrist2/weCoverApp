@@ -26,5 +26,12 @@
     <%= form.submit "Submit", :class => 'submitButton' %>
   </div>
 
-  <div class="refuseLink"><p style="font-size : 11px">No, I don't need coverage</p></div>
+  <div class="refuseLink">
+  <p onclick="redirectPay()" style="font-size : 11px">No, I don't need coverage</p>
+  </div>
+  <script>
+  function redirectPay() {
+    window.confirm("No coverage selected. You will be redirected to My Phone Warehouse...");
+  }
+  </script>
 <% end %>
