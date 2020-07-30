@@ -43,7 +43,11 @@ body {
   }
 
 .style_image{
-    
+  
+}
+
+.style_image_left{
+  margin-right: 3px;
 }
 
 .left
